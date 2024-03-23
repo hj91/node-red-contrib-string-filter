@@ -1,0 +1,269 @@
+[
+    {
+        "id": "c34f3781164d5c89",
+        "type": "tab",
+        "label": "String Filter",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ea5ae09407b28f85",
+        "type": "string-filter",
+        "z": "c34f3781164d5c89",
+        "name": "string",
+        "stringfilter": "ad",
+        "x": 630,
+        "y": 180,
+        "wires": [
+            [
+                "1cd793657b8af565"
+            ]
+        ]
+    },
+    {
+        "id": "e92a4ef88e8b6ebd",
+        "type": "inject",
+        "z": "c34f3781164d5c89",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "i am harshad, how are you?",
+        "payloadType": "str",
+        "x": 90,
+        "y": 180,
+        "wires": [
+            [
+                "ea5ae09407b28f85"
+            ]
+        ]
+    },
+    {
+        "id": "1cd793657b8af565",
+        "type": "debug",
+        "z": "c34f3781164d5c89",
+        "name": "Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 810,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e5a06f28dcc576f8",
+        "type": "inject",
+        "z": "c34f3781164d5c89",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "e4811e672187873c"
+            ]
+        ]
+    },
+    {
+        "id": "e4811e672187873c",
+        "type": "change",
+        "z": "c34f3781164d5c89",
+        "name": "set msg.topic value to enable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "enable",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "ea5ae09407b28f85"
+            ]
+        ]
+    },
+    {
+        "id": "5bdfe043a549106f",
+        "type": "inject",
+        "z": "c34f3781164d5c89",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "mello",
+        "payloadType": "str",
+        "x": 90,
+        "y": 220,
+        "wires": [
+            [
+                "ea5ae09407b28f85"
+            ]
+        ]
+    },
+    {
+        "id": "952fd4178fd38d25",
+        "type": "inject",
+        "z": "c34f3781164d5c89",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "hars",
+        "payloadType": "str",
+        "x": 90,
+        "y": 280,
+        "wires": [
+            [
+                "ea5ae09407b28f85"
+            ]
+        ]
+    },
+    {
+        "id": "8f9b66a9d916fbaa",
+        "type": "inject",
+        "z": "c34f3781164d5c89",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "harshad",
+        "payloadType": "str",
+        "x": 100,
+        "y": 320,
+        "wires": [
+            [
+                "ea5ae09407b28f85"
+            ]
+        ]
+    },
+    {
+        "id": "158d43ec7fbe1c25",
+        "type": "change",
+        "z": "c34f3781164d5c89",
+        "name": "set msg.topic value to enable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "disable",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "ea5ae09407b28f85"
+            ]
+        ]
+    },
+    {
+        "id": "16498b5c60120298",
+        "type": "inject",
+        "z": "c34f3781164d5c89",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "158d43ec7fbe1c25"
+            ]
+        ]
+    }
+]
